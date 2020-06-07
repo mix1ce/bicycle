@@ -1,0 +1,101 @@
+@import mixin
+@import reset
+@import variables
+@import interface
+@import ibg
+@import header
+@import about
+@import work
+@import reviews
+@import shop
+@import mailing
+@import footer
+
+.wrapper
+  font-family: Lato, sans-serif
+  min-height: 100%
+
+.lock
+  overflow: hidden
+  position: relative
+
+.container
+  max-width: 1130px
+  margin: 0 auto
+  padding: 0 15px
+
+.page
+  position: absolute
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  display: flex
+  flex-direction: column
+
+
+.main-screen
+  flex: 1 0 100%
+  position: relative
+  // .main-screen__bg
+  &__bg
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+
+.content
+  text-align: center
+
+.title
+  font-weight: 700
+  font-size: 18px
+  text-transform: uppercase
+  letter-spacing: 2px
+  color: #353738
+
+@media (max-width: 1100px)
+  .mobile-hidden
+    display: none
+
+.block
+  // .block__img
+  &__img
+    padding-bottom: 30px
+
+    @media (max-width: 992px)
+      padding-bottom: 25px
+
+    @media (max-width: 768px)
+      padding-bottom: 20px
+    // @media (max-width: 576px)
+
+  // .block__title
+  &__title
+    padding-bottom: 35px
+    @media (max-width: 992px)
+      padding-bottom: 25px
+
+
+    @media (max-width: 768px)
+      padding-bottom: 20px
+
+  // .block__text
+  &__text
+    font-size: 18px
+    line-height: 34px
+    font-weight: 400
+    color: #848789
+    text-align: justify
+
+    p
+      a
+        white-space: nowrap;
+        color: #848789
+
+        &:active
+          color: #848789
+
+      &:first-child
+        padding-bottom: 15px
